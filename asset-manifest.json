@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React_password/static/css/main.70353848.css",
+    "main.js": "/React_password/static/js/main.d7f31dc7.js",
+    "static/js/453.6c4feeca.chunk.js": "/React_password/static/js/453.6c4feeca.chunk.js",
+    "index.html": "/React_password/index.html",
+    "main.70353848.css.map": "/React_password/static/css/main.70353848.css.map",
+    "main.d7f31dc7.js.map": "/React_password/static/js/main.d7f31dc7.js.map",
+    "453.6c4feeca.chunk.js.map": "/React_password/static/js/453.6c4feeca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70353848.css",
+    "static/js/main.d7f31dc7.js"
+  ]
+}
