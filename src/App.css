@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  width: auto;
+  height: 100%;
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: aliceblue;
+  gap: 20px;
+  scale: 1.8;
+  overflow-x: hidden;
+}
+input[type="text"] {
+  outline: none;
+  border: none;
+  width: 22rem;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.row {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input[type="button"] {
+  border-radius: 5px;
+  height: 30px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  background-color: aqua;
+}
+
+input[type="button"]:active {
+  background-color: rgb(2, 172, 172);
+  color: aliceblue;
+}
+
+span {
+  display: none;
+  transform: scale(0);
+  transition-duration: 2s;
+}
+
+input[type="range"] {
+  accent-color: coral;
+}
+input[type="checkbox"] {
+  accent-color: rgb(156, 23, 213);
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    scale: 1;
   }
-  to {
-    transform: rotate(360deg);
+  input[type="text"] {
+    width: 90%;
+    height: 35px;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+  }
+  .row .range {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+  }
+  .row .checkbox {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
   }
 }
